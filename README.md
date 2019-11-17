@@ -47,20 +47,20 @@ To generate a procedural plant model, you basically need to do three things in a
 
 - Create an `lsystem` and assign it an initial `lstring`. Run some certain steps to get the derived string:
 
-  ```
+  ```python
   lsys = Lsystem([Apex(0)])
   lsys.derive(20)
   ```
 
   You can see the derived lstring in the console by:
 
-  ```
+  ```python
   print(lsys.lstring)
   ```
 
 - Interpret the lstring to a 3D model:
 
-  ```
+  ```python
   turtle.interpret(lsys.lstring, 'lychnis')
   ```
 
